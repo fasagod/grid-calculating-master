@@ -12,6 +12,8 @@ namespace GridCommon
 
         public static void AddJobResult(JobResult result)
         {
+            
+            if(result!= null) 
             callback($"Клиент посчитал: Путь - {result.ResultTrack} Расстояние - {result.MinWay}");
         }
 

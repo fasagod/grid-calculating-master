@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{313EC377-FD5B-4BA7-B0A6-36CC41E83880}</ProjectGuid>
+    <ProjectGuid>{A52916EA-7C3F-4A16-BEBD-1F8580F1F3F8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GridServer</RootNamespace>
     <AssemblyName>GridServer</AssemblyName>

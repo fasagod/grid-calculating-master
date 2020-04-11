@@ -19,6 +19,8 @@ namespace GridCommon
 
         public double MinWay { get; set; }
 
+        public Dictionary<string, double> Dict = new Dictionary<string, double>(); 
+
     }
 
 }

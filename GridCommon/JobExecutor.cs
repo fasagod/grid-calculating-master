@@ -13,7 +13,7 @@ namespace GridCommon
         /// </summary>
         /// <param name="job"></param>
         /// <returns></returns>
-        public string[] Mos(int x)
+        public string[] Algorithm(int x)
         {
             String[] at;
             x++;
@@ -66,6 +66,8 @@ namespace GridCommon
 
         public JobResult Execute(Job job)
         {
+            Dictionary<string, double> dic = new Dictionary<string, double>();
+
             //DateTime tStart, tEnd;
             //double finalTime;
             string result = "";
@@ -90,7 +92,7 @@ namespace GridCommon
             }
 
             //tStart = DateTime.Now;
-            foreach (string xy in Mos(n))
+            foreach (string xy in Algorithm(n))
             {
                 string sss;
                 sss = xy;
@@ -108,10 +110,13 @@ namespace GridCommon
             //tEnd = DateTime.Now;
             //finalTime = (tEnd - tStart).TotalMilliseconds;
 
+            dic.Add(result, minput);
+
             return new JobResult()
             {
                 ResultTrack = result,
                 //FinalTime = finalTime,
+                Dict = dic,
                 MinWay = minput
             };
         }

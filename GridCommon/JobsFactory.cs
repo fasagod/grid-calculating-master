@@ -21,7 +21,6 @@ namespace GridCommon
         static int[] Next()
         {
             var ret = (int[])currI.Clone();
-            headSize = CompHeadSize(citiesCount);
 
             currI[headSize - 1]++;
             for (int i = headSize - 1; i >= 0; i--)
@@ -65,6 +64,7 @@ namespace GridCommon
             }
             citiesCount = jobs.GetLength(0);
             JobsFactory.jobs = jobs;
+            headSize = CompHeadSize(citiesCount);
 
             currI = new int[headSize];
         }
